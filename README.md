@@ -34,10 +34,10 @@ WinIU +- ExampleSettings.xml
 ~~~~
 
 # 使用方法 WinIU.exe
- - 1.WinIU用のフォルダを作成し、その中にWinIU.exeを設置してください。  
- - 2.WinIUSetting.exeにて設定ファイルを作成するか、レジストリに設定値を書き込んでください。  
- - 3.WinIUSetting.exeにて設定ファイルを作成した場合は、同フォルダに設置、もしくは「FTPサーバーのFile Dir(後述)」に設置してください。  
- - 4.WinIU.exeを実行してください。  
+ 1.WinIU用のフォルダを作成し、その中にWinIU.exeを設置してください。  
+ 2.WinIUSetting.exeにて設定ファイルを作成するか、レジストリに設定値を書き込んでください。  
+ 3.WinIUSetting.exeにて設定ファイルを作成した場合は、同フォルダに設置、もしくは「FTPサーバーのFile Dir(後述)」に設置してください。  
+ 4.WinIU.exeを実行してください。  
 
  ## WinIUの設定について
  WinIUSetting.exeにて行います。
@@ -50,7 +50,7 @@ WinIU +- ExampleSettings.xml
 # 使用方法 WinIUSetting.exe
 WinIUSetting.exeは設定値をレジストリに書き込みます。  
 
-また、設定ファイル作成することも出来ます。
+また、設定ファイルを作成することも出来ます。
 - WinIU.exeは起動時に「同フォルダ内の設定ファイル(*.xml)」、「FTPサーバーのFile Dir内の設定ファイル(Settings.xml)」を読み込み、レジストリに値を設定します。  
 予め設定ファイルを作成しておけば、WinIUSetting.exeにてレジストリに値を設定する必要がありません。  
 
@@ -74,7 +74,7 @@ WinIUの起動時だけでなく、実行中も定期的にFTP接続で設定ファイルを取得し設定情報を
 FTPに設置する設定ファイルのファイル名は「Settings.xml」としてください。
 
 ## Make away with oneself
-自己消去機能に関する設定です。
+自己消去機能に関する設定です。  
 有効にした場合、WinIU.exeはWinIUに関するレジストリ、ファイルを削除します。  
 
 ## FTP Server
@@ -90,7 +90,7 @@ FTPサーバーに関する設定です。
  - Key Dir  
  「WinIU for Keyboard」機能にてキー入力履歴をアップロードするディレクトリを設定します。  
  - File Dir  
- 「Get Setting for FTP」機能及び起動時に読み込む設定ファイルが設置されているディレクトリを設定します。  
+ 設定ファイルが設置されているディレクトリを設定します。  
 
 ## AutoRun
 WinIUの自動起動機能に関する設定です。  
@@ -108,10 +108,10 @@ WinIU関連のレジストリを削除します。
 
 # アンインストール
  - 1.WinIU.exeをタスクマネージャーから終了する。  
- - 2.WinIUSetting.exeからCleanを実行し、終了する。
+ - 2.WinIUSetting.exeからCleanを実行し終了する。  
  - 3.WinIUフォルダを削除する。
 
- もしくはMake away with oneself機能を使用してください。
+ もしくは「Make away with oneself」機能を使用してください。
 
 # 注意事項
 - ライセンスについて  
