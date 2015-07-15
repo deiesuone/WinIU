@@ -34,10 +34,10 @@ WinIU +- ExampleSettings.xml
 ~~~~
 
 # 使用方法 WinIU.exe
- -1.WinIU用のフォルダを作成し、その中にWinIU.exeを設置してください。  
- -2.WinIUSetting.exeにて設定ファイルを作成するか、レジストリに設定値を書き込んでください。  
- -3.WinIUSetting.exeにて設定ファイルを作成した場合は、同フォルダに設置、もしくは「FTPサーバーのFile Dir(後述)」に設置してください。  
- -4.WinIU.exeを実行してください。  
+ - 1.WinIU用のフォルダを作成し、その中にWinIU.exeを設置してください。  
+ - 2.WinIUSetting.exeにて設定ファイルを作成するか、レジストリに設定値を書き込んでください。  
+ - 3.2にて設定ファイルを作成した場合は、同フォルダ内に設置または「FTPサーバーのFile Dir(後述)」に設置してください。  
+ - 4.WinIU.exeを実行してください。  
 
  ## WinIUの設定について
  WinIUSetting.exeにて行います。
