@@ -1,26 +1,26 @@
 WinIU
 ======================
-GUI�̖����T�[�o�[�Ď��p�\�t�g�ł��B  
-�X�N���[���V���b�g�A�L�[�{�[�h������w��T�[�o�[�֑��M���܂��B
+GUIの無いサーバー監視用ソフトです。  
+スクリーンショット、キーボード操作を指定サーバーへ送信します。
 
-# �\�t�g�E�F�A�ڍ�
-- �\�t�g��  
+# ソフトウェア詳細
+- ソフト名  
 WinIU  
-- ���쌠��  
+- 著作権者  
 DS1@d_s_1  
-- �Ή���  
-Windows Vista�ȏ� (.Netframework4.5.1)  
-- ���  
-�t���[�E�F�A  
-- �W������  
-�f�X�N�g�b�v�A�v���P�[�V����  
+- 対応環境  
+Windows Vista以上 (.NET Framework 4.5.1)  
+- 種別  
+フリーウェア  
+- ジャンル  
+デスクトップアプリケーション  
 - E-Mail  
 deiesuone@gmail.com  
-- ���s�t�@�C����  
+- 実行ファイル名  
 WinIU.exe  
 WinIUSetting.exe  
 
-# �t�@�C���\��
+# ファイル構成
 ~~~~
 WinIU +- ExampleSettings.xml
       |  
@@ -30,90 +30,90 @@ WinIU +- ExampleSettings.xml
       |  
 	  +- LICENSE  
 	  |  
-      +- README.md(�{�t�@�C��)
+      +- README.md(本ファイル)
 ~~~~
 
-# �g�p���@ WinIU.exe
- - 1.WinIU�p�̃t�H���_���쐬���A���̒���WinIU.exe��ݒu���Ă��������B  
- - 2.WinIUSetting.exe�ɂĐݒ�t�@�C�����쐬���邩�A���W�X�g���ɐݒ�l����������ł��������B  
- - 3.2�ɂĐݒ�t�@�C�����쐬�����ꍇ�́A���t�H���_���ɐݒu�܂��́uFTP�T�[�o�[��File Dir(��q)�v�ɐݒu���Ă��������B  
- - 4.WinIU.exe�����s���Ă��������B  
+# 使用方法 WinIU.exe
+ - 1.WinIU用のフォルダを作成し、その中にWinIU.exeを設置してください。  
+ - 2.WinIUSetting.exeにて設定ファイルを作成するか、レジストリに設定値を書き込んでください。  
+ - 3.2にて設定ファイルを作成した場合は、同フォルダ内に設置または「FTPサーバーのFile Dir(後述)」に設置してください。  
+ - 4.WinIU.exeを実行してください。  
 
- ## WinIU�̐ݒ�ɂ���
- WinIUSetting.exe�ɂčs���܂��B
+ ## WinIUの設定について
+ WinIUSetting.exeにて行います。
  
- ## WinIU�̏I���ɂ���
- UI�ɂďI��������@�͂���܂���B  
- �^�X�N�}�l�[�W���[����WinIU.exe���I�������Ă��������B
- ����PC�N�����Ɏ������s����܂��̂ŁA�������s���������Ȃ��ꍇ��WinIUSetting.exe�ɂĐݒ肵�Ă��������B
+ ## WinIUの終了について
+ UIにて終了する方法はありません。  
+ タスクマネージャーからWinIU.exeを終了させてください。
+ 次回PC起動時に自動実行されますので、自動実行させたくない場合はWinIUSetting.exeにて設定してください。
 
-# �g�p���@ WinIUSetting.exe
-WinIUSetting.exe�͐ݒ�l�����W�X�g���ɏ������݂܂��B  
+# 使用方法 WinIUSetting.exe
+WinIUSetting.exeは設定値をレジストリに書き込みます。  
 
-�܂��A�ݒ�t�@�C�����쐬���邱�Ƃ��o���܂��B
-- WinIU.exe�͋N�����Ɂu���t�H���_���̐ݒ�t�@�C��(*.xml)�v�A�uFTP�T�[�o�[��File Dir���̐ݒ�t�@�C��(Settings.xml)�v��ǂݍ��݁A���W�X�g���ɒl��ݒ肵�܂��B  
-�\�ߐݒ�t�@�C�����쐬���Ă����΁AWinIUSetting.exe�ɂă��W�X�g���ɒl��ݒ肷��K�v������܂���B  
+また、設定ファイルを作成することも出来ます。
+- WinIU.exeは起動時に「同フォルダ内の設定ファイル(*.xml)」、「FTPサーバーのFile Dir内の設定ファイル(Settings.xml)」を読み込み、レジストリに値を設定します。  
+予め設定ファイルを作成しておけば、WinIUSetting.exeにてレジストリに値を設定する必要がありません。  
 
 ## File>Import
-�ݒ�t�@�C������ݒ�l��ǂݍ��݂܂��B
+設定ファイルから設定値を読み込みます。
 
 ## File>Export
-���͒l����ݒ�t�@�C�����쐬���܂��B
+入力値から設定ファイルを作成します。
 
 ## WinIU for Image
-�X�N���[���V���b�g�̑��M�Ɋւ���ݒ�ł��B  
-�L���ɂ���ꍇ�́uRun Process�v�Ƀ`�F�b�N�����A�uInterval�v�ɉ��b���Ƃɑ��M���邩����͂��Ă��������B  
+スクリーンショットの送信に関する設定です。  
+有効にする場合は「Run Process」にチェックを入れ、「Interval」に何秒ごとに送信するかを入力してください。  
 
 ## WinIU for Keyboard
-�L�[�{�[�h���͗����̑��M�Ɋւ���ݒ�ł��B  
-�L���ɂ���ꍇ�́uRun Process�v�Ƀ`�F�b�N�����A�uInterval�v�ɉ��b���Ƃɑ��M���邩����͂��Ă��������B  
+キーボード入力履歴の送信に関する設定です。  
+有効にする場合は「Run Process」にチェックを入れ、「Interval」に何秒ごとに送信するかを入力してください。  
 
 ## Get Settings.xml for FTP  
-WinIU�̋N���������łȂ��A���s��������I��FTP�ڑ��Őݒ�t�@�C�����擾���ݒ�����X�V���܂��B  
-�L���ɂ���ꍇ�́uRun Process�v�Ƀ`�F�b�N�����A�uInterval�v�ɉ��b���Ƃɓǂݍ��݂��s��������͂��Ă��������B  
-FTP�ɐݒu����ݒ�t�@�C���̃t�@�C�����́uSettings.xml�v�Ƃ��Ă��������B
+WinIUの起動時だけでなく、実行中も定期的にFTP接続で設定ファイルを取得し設定情報を更新します。  
+有効にする場合は「Run Process」にチェックを入れ、「Interval」に何秒ごとに読み込みを行うかを入力してください。  
+FTPに設置する設定ファイルのファイル名は「Settings.xml」としてください。
 
 ## Make away with oneself
-���ȏ����@�\�Ɋւ���ݒ�ł��B  
-�L���ɂ����ꍇ�AWinIU.exe��WinIU�Ɋւ��郌�W�X�g���A�t�@�C�����폜���܂��B  
+自己消去機能に関する設定です。  
+有効にした場合、WinIU.exeはWinIUに関するレジストリ、ファイルを削除します。  
 
 ## FTP Server
-FTP�T�[�o�[�Ɋւ���ݒ�ł��B  
+FTPサーバーに関する設定です。  
  - Host  
- �z�X�g����ݒ肵�܂��B
+ ホスト名を設定します。
  - User  
- ���[�U�[����ݒ肵�܂��B  
+ ユーザー名を設定します。  
  - Password  
- �p�X���[�h��ݒ肵�܂��B  
+ パスワードを設定します。  
  - Image Dir  
- �uWinIU for Image�v�@�\�ɂăX�N���[���V���b�g���A�b�v���[�h����f�B���N�g����ݒ肵�܂��B  
+ 「WinIU for Image」機能にてスクリーンショットをアップロードするディレクトリを設定します。  
  - Key Dir  
- �uWinIU for Keyboard�v�@�\�ɂăL�[���͗������A�b�v���[�h����f�B���N�g����ݒ肵�܂��B  
+ 「WinIU for Keyboard」機能にてキー入力履歴をアップロードするディレクトリを設定します。  
  - File Dir  
- �ݒ�t�@�C�����ݒu����Ă���f�B���N�g����ݒ肵�܂��B  
+ 設定ファイルが設置されているディレクトリを設定します。  
 
 ## AutoRun
-WinIU�̎����N���@�\�Ɋւ���ݒ�ł��B  
-PC�N�����Ɏ����I�ɋN������A�v���P�[�V�����̃t���p�X����͂��܂��B  
-���̒l��WinIU.exe�̋N������WinIU.exe�̃t���p�X�ŕK���X�V����܂��B  
+WinIUの自動起動機能に関する設定です。  
+PC起動時に自動的に起動するアプリケーションのフルパスを入力します。  
+この値はWinIU.exeの起動時にWinIU.exeのフルパスで必ず更新されます。  
 
 ## Apply
-���݂̓��͒l�Ń��W�X�g�����X�V���܂��B
+現在の入力値でレジストリを更新します。
 
 ## Restore
-���݂̃��W�X�g���̒l�œ��͒l���X�V���܂��B
+現在のレジストリの値で入力値を更新します。
 
 ## Clean
-WinIU�֘A�̃��W�X�g�����폜���܂��B
+WinIU関連のレジストリを削除します。
 
-# �A���C���X�g�[��
- - 1.WinIU.exe���^�X�N�}�l�[�W���[����I������B  
- - 2.WinIUSetting.exe����Clean�����s���I������B  
- - 3.WinIU�t�H���_���폜����B
+# アンインストール
+ - 1.WinIU.exeをタスクマネージャーから終了する。  
+ - 2.WinIUSetting.exeからCleanを実行し終了する。  
+ - 3.WinIUフォルダを削除する。
 
- �������́uMake away with oneself�v�@�\���g�p���Ă��������B
+ もしくは「Make away with oneself」機能を使用してください。
 
-# ���ӎ���
-- ���C�Z���X�ɂ���  
-�{�\�t�g�E�F�A��MIT���C�Z���X�Ɋ�Â��Č��J����Ă��܂��B  
-LICENSE�t�@�C�����Q�Ƃ��ĉ������B  
+# 注意事項
+- ライセンスについて  
+本ソフトウェアはMITライセンスに基づいて公開されています。  
+LICENSEファイルを参照して下さい。  
