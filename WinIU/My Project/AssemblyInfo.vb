@@ -11,14 +11,14 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("WinIU")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("DS1")> 
-<Assembly: AssemblyProduct("WinIU")> 
-<Assembly: AssemblyCopyright("Copyright © DS1 2015")> 
+<Assembly: AssemblyProduct("WinIU")>
+<Assembly: AssemblyCopyright("Copyright © DS1 2017")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'このプロジェクトが COM に公開される場合、次の GUID がタイプ ライブラリの ID になります。
-<Assembly: Guid("dcee8149-a91d-479e-8df3-27f8d2a4fa5b")> 
+<Assembly: Guid("dcee8149-a91d-479e-8df3-27f8d2a4fa5b")>
 
 ' アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 既定値にすることができます:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.1.0.0")> 
-<Assembly: AssemblyFileVersion("1.1.0.0")> 
+<Assembly: AssemblyVersion("1.2.0.0")>
+<Assembly: AssemblyFileVersion("1.2.0.0")>
